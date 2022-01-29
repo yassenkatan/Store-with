@@ -39,38 +39,5 @@ app.use('/API/product',ProductRouter);
 app.get('/',(req,res)=>{
     res.render('image');
 });
-//Media 
-// let storage=multer.diskStorage({
-//     destination:(req,file,cb)=>{
-//         cb(null,'Media')
-//     },
-//         filename:(req,file,cb)=>{
-//         cb(null,file.fieldname+ '-' +Date.now())
-//     }
-// });
-// let upload=multer({storage:storage});
-
-// app.get('/images',(req,res)=>{
-//     Image.find({},(err,items)=>{
-//         if(err){
-//             res.status(404).send(err);
-//         }
-//         else{
-//             res.render('image',{items:items});
-//         }
-//     });
-// });
-// app.post ('/',upload.single('image'),(req,res)=>{
-//     let img={
-//         name:req.body.name,
-//         desc:req.body.desc,
-//         img:{
-//             data:fs.readFileSync(path.join(__dirname+'/Media/'+req.file.filename)),
-//             contentType:'image/png'
-//         }
-//     };
-//     let saved=Image.create(img)
-//     res.status(200).redirect('/images');
-// })
 
 
