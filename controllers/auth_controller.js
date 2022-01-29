@@ -5,6 +5,7 @@ const User =require('../models/user');
 const jwt=require('jsonwebtoken');
 const bcrypt=require('bcryptjs');
 const dotenv=require('dotenv');
+const fs=require('fs');
 
 //Token
 const SignedToken= async (id) =>{
@@ -23,7 +24,10 @@ const signup=async (req,res)=>{
             address:req.body.address,
             phoneNumber:req.body.phoneNumber,
             mobileNumber:req.body.mobileNumber,
-            photo:req.body.photo,
+            photo:{
+                data:fs.readFileSync('Media/Users/'+req.file.filename),
+                contentType:'image/jpeg'
+            },
             isAdmin:req.body.isAdmin    
         });
         //Encrypt Password

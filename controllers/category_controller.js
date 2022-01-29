@@ -29,7 +29,7 @@ const all_categories=async (req,res)=>{
         let all=await Category.aggregate([{$lookup:
             {
                 from:'departments',
-        localField:'dept',
+        localField:'dept_id',
         foreignField:'_id',
         as:'cat_details'
         }}]);
@@ -44,7 +44,7 @@ const all_categories=async (req,res)=>{
 const selected_category_by_name=async(req,res)=>{
 try {
     let data=req.params.data;
-    let cat=await Category.findOne({cat_name:data},{_id:0,cat_name:1}).populate({path:'dept',select:'dept_name'});
+    let cat=await Category.findOne({cat_name:data},{_id:0,cat_name:1}).populate({path:'dept_id',select:'dept_name'});
     res.status(200).send(cat);
 } catch (err) {
     res.status(404).send('ERR MSG:'+err.message);
@@ -53,7 +53,7 @@ try {
 const selected_category_by_Dept=async(req,res)=>{
     try {
         let data=req.params.data;
-        let cat=await Category.find({dept_id:data},{_id:0,cat_name:1}).populate({path:'dept',select:'dept_name'});
+        let cat=await Category.find({dept_id:data},{_id:0,cat_name:1}).populate({path:'dept_id',select:'dept_name'});
         res.status(200).send(cat);
     } catch (err) {
         res.status(404).send('ERR MSG:'+err.message);

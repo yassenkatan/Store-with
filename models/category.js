@@ -9,7 +9,7 @@ const CategorySchema=new schema({
         required:true,
         maxlength:20,
     },
-    dept:{
+    dept_id:{
         type:[mongoose.Schema.Types.ObjectId],
         ref:'department'
     }

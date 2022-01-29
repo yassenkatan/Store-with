@@ -10,7 +10,7 @@ const BrandSchema=new schema({
         required:true,
         maxlength:20,
     },
-    cat_id:{
+    category:{
         type:[mongoose.Schema.Types.ObjectId],
         ref:'category'
     }

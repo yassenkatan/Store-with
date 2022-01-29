@@ -1,9 +1,6 @@
 const mongoose=require('mongoose');
-const autoIncrementModelID = require('./counter');
 const dotenv=require('dotenv');
 dotenv.config();
-let connection=mongoose.createConnection(process.env.DB_URL,{dbName:'Store',useNewUrlParser:true});
-autoincrement.initialize(connection);
 
 const schema=mongoose.Schema;
 const ProductSchema=new schema({
@@ -14,7 +11,8 @@ const ProductSchema=new schema({
         maxlength:20,
     },
     image:{
-        type:String
+        data:Buffer,
+        contentType:String
     },
     rate:{
         type:Number,
@@ -22,6 +20,16 @@ const ProductSchema=new schema({
     },
     price:{
         type:Number
+    },
+    QTY:{
+        type:Number,
+        required:true,
+        default:1,
+        min:1
+    },
+    discount:{
+        type:Number,
+        default:0
     },
     color:{
         type:String
@@ -35,9 +43,13 @@ const ProductSchema=new schema({
     other:{
         type:String
     },
-    brand_id:{
+    brand:{
         type:[mongoose.Schema.Types.ObjectId],
         ref:'brand'
+    },
+    user:{
+        type:[mongoose.Schema.Types.ObjectId],
+        ref:'user'
     }
 });
 

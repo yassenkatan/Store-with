@@ -4,7 +4,7 @@
   "description": "Store By NodeJs & ExpressJS MVC with database MongoDB ",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "app": "echo \"Error: no app specified\" && exit 1"
   },
   "author": "Yassin Kattan - Backend Developer",
   "license": "ISC",

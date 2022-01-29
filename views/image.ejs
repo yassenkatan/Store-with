@@ -4,49 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image</title>
+    <title>Product</title>
 </head>
 <body>
     <h1>Upload Image</h1>
     <hr>
     <div>
-        <form action="/" method="POST" enctype="multipart/form-data">
+        <form action="/API/product/add_product" method="POST" enctype="multipart/form-data">
             <div>
-                <label for="name">Image Title</label>
-                <input type="text" id="name" placeholder="Name" 
-                    value="" name="name" required>
-            </div>
-            <div>
-                <label for="desc">Image Description</label>
-                <textarea id="desc" name="desc" value="" rows="2" 
-                        placeholder="Description" required>
-                </textarea>
-            </div>
-            <div>
+                <label for="prod_name">Product Name : </label>
+                <input type="text" id="prod_name" 
+                    name="prod_name" value="" ><br>
+                    <label for="rate">Rate : </label>
+                <input type="text" id="rate" 
+                    name="rate" value="" ><br>
+                    <label for="price">Price : </label>
+                <input type="text" id="price" 
+                    name="price" value="" ><br>
+                    <label for="QTY">QTY : </label>
+                <input type="text" id="QTY" 
+                    name="QTY" value="" ><br>
+                    <label for="discount">DisCount : </label>
+                <input type="text" id="discount" 
+                    name="discount" value="" ><br>
+                    <label for="color">Color : </label>
+                <input type="text" id="color" 
+                    name="color" value="" ><br>
+                    <label for="matrial">Matrial : </label>
+                <input type="text" id="matrial" 
+                    name="matrial" value="" ><br>
+                    <label for="creationDate">Creation Date : </label>
+                <input type="date" id="creationDate" 
+                    name="creationDate" value="" ><br>
+                    <label for="brand">Brand : </label>
+                <input type="text" id="brand" 
+                    name="brand" value="" ><br>
+                    <label for="other">Other Specifications : </label>
+                <textarea name="other" id="other" cols="30" rows="10"></textarea><br>
                 <label for="image">Upload Image</label>
-                <input type="file" id="image" 
-                    name="image" value="" required>
+                <input type="file" id="Products" 
+                    name="Products" value=""><br>
             </div>
             <div>
                 <button type="submit">Submit</button>
             </div>
         </form>
-    </div>
-    <hr>
-    <h1>Uploaded Image</h1>
-    <div>
-        <% items.forEach(function(image){ %>
-            <div>
-                <div>
-                    <img src="data:image/<%= image.img.contentType%>;base64,<%= image.img.data.toString('base64')%> ">
-                    <div>
-                        <h5><%= image.name %> </h5>
-                        <p><%= image.desc  %> </p>
-                    </div>
-                </div>
-                
-            </div> 
-            <% }) %> 
     </div>
 </body>
 </html>

@@ -9,10 +9,10 @@ router.post('/add_category',Category_Controller.add_category);
 router.get('/all_categories',Category_Controller.all_categories);
 
 //Search_By_Dept
-router.get('/:data',Category_Controller.selected_category_by_Dept);
+router.get('/dept/:data',Category_Controller.selected_category_by_Dept);
 
 //Search_By_ Name
-router.post('/:data',Category_Controller.selected_category_by_name);
+router.get('/:data',Category_Controller.selected_category_by_name);
 
 //Update Category
 router.put('/:id',Category_Controller.upd_category);
