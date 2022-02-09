@@ -37,11 +37,46 @@ const ProductSchema=new schema({
     matrial:{
         type:String
     },
+    weight:{
+        type:Number
+    },
     creationDate:{
         type:Date
     },
-    other:{
-        type:String
+    specs:{
+        key1:{
+            type:String
+        },
+        key2:{
+            type:String
+        },
+        key3:{
+            type:String
+        },
+        key4:{
+            type:String
+        },
+        key5:{
+            type:String
+        },
+        key6:{
+            type:String
+        },
+        key7:{
+            type:String
+        },
+        key8:{
+            type:String
+        },
+        key9:{
+            type:String
+        },
+        key10:{
+            type:String
+        }
+    },
+    warrantly:{
+        type:Number
     },
     brand:{
         type:[mongoose.Schema.Types.ObjectId],

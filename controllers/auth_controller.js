@@ -6,7 +6,7 @@ const jwt=require('jsonwebtoken');
 const bcrypt=require('bcryptjs');
 const dotenv=require('dotenv');
 const fs=require('fs');
-
+dotenv.config();
 //Token
 const SignedToken= async (id) =>{
     return jwt.sign({id},process.env.TOKEN_KEY,{expiresIn:process.env.EXPIRES_IN_KEY});
@@ -28,7 +28,10 @@ const signup=async (req,res)=>{
                 data:fs.readFileSync('Media/Users/'+req.file.filename),
                 contentType:'image/jpeg'
             },
-            isAdmin:req.body.isAdmin    
+            nationalID:req.body.nationalID,
+            isAdmin:req.body.isAdmin,
+            isBussines:req.body.isBussines,
+            isNormal:req.body.isNormal    
         });
         //Encrypt Password
         let passwordEncrypted=await bcrypt.hash(user.password,10);
@@ -43,8 +46,14 @@ const signup=async (req,res)=>{
             address:req.body.address,
             phoneNumber:req.body.phoneNumber,
             mobileNumber:req.body.mobileNumber,
-            photo:req.body.photo,
-            isAdmin:user.isAdmin
+            photo:{
+                data:fs.readFileSync('Media/Users/'+req.file.filename),
+                contentType:'image/jpeg'
+            },
+            nationalID:req.body.nationalID,
+            isAdmin:req.body.isAdmin,
+            isBussines:req.body.isBussines,
+            isNormal:req.body.isNormal 
         });
         //Check if user Exist
         let userExist=await User.findOne({
@@ -57,7 +66,7 @@ const signup=async (req,res)=>{
             //Check password is same confirm password 
             if(user.password==user.passwordConfirm)
             {
-                const token=await (await SignedToken(newUser.usr_id)).toString();
+                const token=await (await SignedToken(newUser._id)).toString();
                 newUser.token=token;
                 newUser.save();
                 res.send('New User Added ...');
@@ -87,62 +96,138 @@ const all_users=async(req,res)=>{
 
 //Login Function
 const login = async(req,res)=>{
-    try {
-        let email=req.body.email;
-        let password=req.body.password;
+    try{
+
+            let email=req.body.email;
+            let password=req.body.password;
+        
         let user_signedIn=await User.findOne({
             email:email
         });
-        //Decrypte Password
+        if(user_signedIn!=null&&user_signedIn.email==email){
+            
         let passwordEncrypted=user_signedIn.password;
+        //Decrypte Password
         const passwordDecrypted=await bcrypt.compare(password,passwordEncrypted);
+         if(passwordDecrypted==true){
         //Check if user true
-        if(user_signedIn){
-        const token=await SignedToken(user_signedIn.usr_id);
-                
+                const token=await SignedToken(user_signedIn._id);
                 //check user priv
                 if(user_signedIn.isAdmin==true){
                     res.header('Auth-token',token).status(200).send('Welcome '+user_signedIn.fullname+' with Administrator Roles ..');
-                    //res.status(200).send('Welcome '+user_signedIn.fullname+' with Administrator Roles ..');
                 }
-                else if(user_signedIn.isAdmin==false)
+                else if(user_signedIn.isBussines==true)
                 {
-                    res.header('Auth-token',token).status(200).send('Welcome '+user_signedIn.fullname+' with User Roles ..');
-                    //res.status(200).send('Welcome '+user_signedIn.fullname+' with User Roles ..');
+                    res.header('Auth-token',token).status(200).send('Welcome '+user_signedIn.fullname+' with Bussines Roles ..');
+                }
+                else if(user_signedIn.isNormal==true)
+                {
+                    res.header('Auth-token',token).status(200).send('Welcome '+user_signedIn.fullname+' with Customer Roles ..');
                 }
         }
         else{
-            res.send('Invalid Username or Password ...');
+            res.status(404).send('Invalid Username or Password ...');
         }
-    } catch (err) {
-        console.log(err.message)
     }
-}
+        else{
+            res.status(404).send('Invalid Username or Password ...');
+        }
+    }
+    catch(err){
+        res.status(404).send('Error Message : '+err.message)
+    }
+    }
 
-const auth=async(req,res,next)=>{
+const Admin_auth=async(req,res,next)=>{
     const token=req.header('Auth-token');
     if(!token)
     {
         res.status(401).send('Access Rejected ...');
     }
     try {
-        jwt.verify(token,process.env.TOKEN_KEY,{expiresIn:process.env.EXPIRES_IN_KEY},(err,decoded)=>{
-            if(err){res.status(400).send('Error MSG :'+err)}
-            else
+        const decoded=jwt.verify(token,process.env.TOKEN_KEY,{expiresIn:process.env.EXPIRES_IN_KEY});
+        req.user_signedIn=decoded;
+        if(req.user_signedIn=decoded)
+        {
+            let id=req.user_signedIn.id;
+            let user=await User.findOne({_id:id})
+            if(user.isAdmin==true)
             {
-                req.usr_id=decoded._id;
                 next();
             }
-        });
+            else
+            {
+                res.status(401).send('You Don`t Have Permession ...')
+            }
+        }
+           
     } catch (err) {
         res.status(404).send("Error MSG : "+err.message);
     }
 
 }
 
+const Bussiness_auth=async(req,res,next)=>{
+    const token=req.header('Auth-token');
+    if(!token)
+    {
+        res.status(401).send('Access Rejected ...');
+    }
+    try {
+        const decoded=jwt.verify(token,process.env.TOKEN_KEY,{expiresIn:process.env.EXPIRES_IN_KEY});
+        req.user_signedIn=decoded;
+        if(req.user_signedIn=decoded)
+        {
+            let id=req.user_signedIn.id;
+            let user=await User.findOne({_id:id})
+            if(user.isBussines==true)
+            {
+                next();
+            }
+            else
+            {
+                res.status(401).send('You Don`t Have Permession ...')
+            }
+        }
+           
+    } catch (err) {
+        res.status(404).send("Error MSG : "+err.message);
+    }
+
+}
+const Normal_auth=async(req,res,next)=>{
+    const token=req.header('Auth-token');
+    if(!token)
+    {
+        res.status(401).send('Access Rejected ...');
+    }
+    try {
+        const decoded=jwt.verify(token,process.env.TOKEN_KEY,{expiresIn:process.env.EXPIRES_IN_KEY});
+        req.user_signedIn=decoded;
+        if(req.user_signedIn=decoded)
+        {
+            let id=req.user_signedIn.id;
+            let user=await User.findOne({_id:id})
+            if(user.isNormal==true)
+            {
+                next();
+            }
+            else
+            {
+                res.status(401).send('You Don`t Have Permession ...')
+            }
+        }
+           
+    } catch (err) {
+        res.status(404).send("Error MSG : "+err.message);
+    }
+
+}
 module.exports={
     signup,
     login,
     all_users,
-    auth
+    Admin_auth,
+    Bussiness_auth,
+    Normal_auth
 }

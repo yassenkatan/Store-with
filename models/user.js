@@ -48,13 +48,26 @@ const UserSchema=new mongoose.Schema({
     photo:{
         data:Buffer,
         contentType:String
-        }
-        ,
+        },
+    nationalID:{
+            type:Number,
+            required:true
+        },
     isAdmin:{
         type:Boolean,
         required:true,
         default:false
         },
+    isBussines:{
+        type:Boolean,
+        required:true,
+        default:false
+    },
+    isNormal:{
+        type:Boolean,
+        required:true,
+        default:true
+    },
     token:{
         type:String
         },

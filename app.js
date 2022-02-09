@@ -37,7 +37,33 @@ app.use('/API/category',CategoryRouter);
 app.use('/API/brand',BrandRouter);
 app.use('/API/product',ProductRouter);
 app.get('/',(req,res)=>{
-    res.render('image');
+    res.render('homePage');
 });
+app.get('/signupPage',(req,res)=>{
+    res.render('signupPage');
+})
+app.get('/loginPage',(req,res)=>{
+    res.render('loginPage');
+})
+app.post('/date',(req,res)=>{
+    let startDate=req.body.startDate;
+    let duration=req.body.duration;
+    duration=parseInt(duration);
+    let date=new Date(startDate);
+    let calc=date.setDate(date.getDate()+duration);
+    let endDate=new Date(calc);
+    let datenow=Date.now();
+    let today=new Date(datenow);
+    let expired;
+    if(endDate.getDate()==today.getDate()){
+        expired=true;
+        res.send('Expired :'+expired);
+    }
+    else{
+        expired=false;
+        res.send('Not Expired '+expired);
+    }
+
+})
 
 
