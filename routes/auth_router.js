@@ -22,4 +22,9 @@ router.post('/login',auth.login);
 //All Users
 router.get('/all_users',auth.Admin_auth,auth.all_users);
 
+//Update User
+router.put('/update_user_byAdmin',auth.Admin_auth,auth.upd_user_by_admin);
+router.put('/update_user_byBussiness',auth.upd_user_by_bussines);
+router.put('/update_user_byCustomer',auth.Customer_auth,auth.upd_user_by_customer);
+
 module.exports=router;

@@ -1,0 +1,129 @@
+2/13/2022, 8:59:42 PM | INFO | User Login:  | data "admin@admin.com" | 
+2/13/2022, 9:04:47 PM | INFO | User SignUp:  | data "yass@gmail.com" | 
+2/14/2022, 9:52:56 AM | INFO | User Login:  | data "admin@admin.com" | 
+2/14/2022, 9:54:03 AM | INFO | User Login:  | data "admin@admin.com" | 
+2/15/2022, 12:01:57 PM | INFO | User Login:  | data "admin@admin.com::ffff:127.0.0.1" | 
+2/15/2022, 12:01:57 PM | ERROR | User Login:  | data "audit.prepareAudit is not a function" | 
+2/15/2022, 12:02:55 PM | INFO | User Login:  | data "admin@admin.com::ffff:127.0.0.1" | 
+2/15/2022, 12:02:55 PM | ERROR | User Login:  | data "audit.prepareAudit is not a function" | 
+2/15/2022, 12:04:20 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 12:04:20 PM | ERROR | User Login:  | data "audit.prepareAudit is not a function" | 
+2/15/2022, 12:07:34 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 12:07:34 PM | ERROR | User Login:  | data "audit.prepareAudit is not a function" | 
+2/15/2022, 12:09:51 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 12:09:51 PM | ERROR | User Login:  | data "Audit_Controller.prepareAudit is not a function" | 
+2/15/2022, 12:11:04 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 12:12:28 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 12:12:28 PM | ERROR | User Login:  | data "Parameter \"obj\" to Document() must be an object, got LOGIN" | 
+2/15/2022, 12:14:06 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 12:20:09 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 12:21:55 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 12:23:22 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 12:23:22 PM | ERROR | User Login:  | data "Identifier 'status' has already been declared" | 
+2/15/2022, 12:23:33 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 12:24:21 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 12:25:20 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 12:26:28 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 12:28:47 PM | ERROR | User Login:  | data "Invalid Username or Password ..." | 
+2/15/2022, 12:29:59 PM | ERROR | User Login:  | data "Invalid Username or Password ... | ::ffff:127.0.0.1" | 
+2/15/2022, 12:30:03 PM | ERROR | User Login:  | data "Invalid Username or Password ..." | 
+2/15/2022, 12:46:19 PM | ERROR | User SignUp:  | data "Password not confirmed" | 
+2/15/2022, 12:47:17 PM | INFO | User SignUp:  | data "mdnh@gmail.com | Date: 2/15/2022, 12:46:47 PM" | 
+2/15/2022, 12:49:23 PM | ERROR | User SignUp:  | data "User Exist" | 
+2/15/2022, 12:50:13 PM | ERROR | User SignUp:  | data "Password not confirmed" | 
+2/15/2022, 12:50:20 PM | INFO | User SignUp:  | data "mdnh@gmail.com | Date: 2/15/2022, 12:46:47 PM" | 
+2/15/2022, 12:53:32 PM | INFO | User SignUp:  | data "mdnh@gmail.com | Date: 2/15/2022, 12:53:03 PM" | 
+2/15/2022, 12:54:00 PM | INFO | User SignUp:  | data "mdnh1@gmail.com | Date: 2/15/2022, 12:53:03 PM" | 
+2/15/2022, 12:54:32 PM | INFO | User Login:  | data "mdnh1@gmail.com | ::ffff:127.0.0.1" | 
+2/15/2022, 12:55:05 PM | INFO | User SignUp:  | data "mdnh2@gmail.com | Date: 2/15/2022, 12:53:03 PM" | 
+2/15/2022, 12:55:15 PM | INFO | User Login:  | data "mdnh2@gmail.com | ::ffff:127.0.0.1" | 
+2/15/2022, 1:04:01 PM | INFO | User Login:  | data "mdnh2@gmail.com | ::ffff:127.0.0.1" | 
+2/15/2022, 1:04:10 PM | ERROR | Get All Users :  | data "Cannot read property 'Auth_token' of undefined" | 
+2/15/2022, 1:04:51 PM | INFO | User Login:  | data "mdnh2@gmail.com | ::ffff:127.0.0.1" | 
+2/15/2022, 1:04:56 PM | INFO | Get All Users :  | data "Done by mdnh2@gmail.com | Date: 2/15/2022, 1:04:45 PM" | 
+2/15/2022, 1:07:05 PM | INFO | User Login:  | data "mdnh2@gmail.com | ::ffff:127.0.0.1" | 
+2/15/2022, 1:07:10 PM | INFO | Get All Users :  | data "Done by mdnh2@gmail.com | Date: 2/15/2022, 1:06:59 PM" | 
+2/15/2022, 1:07:26 PM | INFO | User Login:  | data "mdnh2@gmail.com | ::ffff:127.0.0.1" | 
+2/15/2022, 1:46:20 PM | ERROR | Admin Auth :  | data "You Don't Have Permession mdnh2@gmail.com" | 
+2/15/2022, 1:46:31 PM | INFO | User Login:  | data "mdnh2@gmail.com | ::ffff:127.0.0.1" | 
+2/15/2022, 1:46:36 PM | ERROR | Admin Auth :  | data "You Don't Have Permession mdnh2@gmail.com" | 
+2/15/2022, 1:47:41 PM | ERROR | Admin Auth :  | data "Access Rejected | IP: ::ffff:127.0.0.1" | 
+2/15/2022, 1:47:41 PM | ERROR | Admin Auth : jwt must be provided |
+2/15/2022, 7:09:26 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 7:11:58 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 7:17:16 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 7:18:50 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 7:19:40 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 7:20:58 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 7:40:33 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 7:42:16 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 7:42:35 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 7:43:30 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 7:44:15 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 7:44:38 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 7:51:21 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 7:51:42 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 7:52:31 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 7:52:52 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 7:53:48 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 7:55:10 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 7:59:38 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 8:00:13 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 8:03:59 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 8:13:13 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 8:13:47 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 8:15:20 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 8:15:45 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 8:16:27 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 8:16:59 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 8:18:01 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 8:19:00 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 8:19:20 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 8:19:53 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 8:20:32 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 8:22:48 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 8:23:29 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 8:25:48 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 8:29:52 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 8:30:31 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 8:34:49 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 8:43:22 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 8:45:06 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 8:49:14 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 8:50:36 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 8:51:11 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 8:52:42 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 8:55:20 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 8:56:12 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 8:58:09 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 8:58:28 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 8:59:26 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 8:59:42 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 8:59:59 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 9:02:22 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 9:03:00 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 9:03:33 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 9:04:17 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 9:04:42 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 9:08:34 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 9:09:29 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 9:10:31 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 9:11:10 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 9:12:35 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 9:13:27 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 9:13:58 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 9:14:38 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 9:15:28 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 9:16:03 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 9:17:23 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 9:21:28 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 9:22:06 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 9:23:00 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 9:23:48 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 9:24:10 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 9:24:56 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 9:25:13 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 9:28:33 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 9:30:08 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 9:37:05 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/15/2022, 9:53:37 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 

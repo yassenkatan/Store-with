@@ -1,0 +1,8 @@
+2/15/2022, 7:07:01 PM | ERROR | Add Department :  | data "department validation failed: dept_name: Path `dept_name` is required." | 
+2/15/2022, 7:09:38 PM | ERROR | Add Department :  | data "department validation failed: dept_name: Path `dept_name` is required." | 
+2/15/2022, 7:10:18 PM | ERROR | Add Department :  | data "Cannot read property 'email' of undefined" | 
+2/15/2022, 7:12:02 PM | INFO | Add Department :  | data "Electronics is New Department Added | IP: ::ffff:127.0.0.1" | 
+2/15/2022, 7:17:18 PM | ERROR | Add Department :  | data "saved is not defined" | 
+2/15/2022, 8:52:44 PM | ERROR | Add Department :  | data "Invalid left-hand side in assignment" | 
+2/15/2022, 9:30:12 PM | INFO | Add Department :  | data "Electronics is New Department Added | IP: ::ffff:127.0.0.1" | 
+2/15/2022, 9:37:07 PM | INFO | Add Department :  | data "Electronics is New Department Added | IP: ::ffff:127.0.0.1" | 

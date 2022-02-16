@@ -53,6 +53,19 @@ const UserSchema=new mongoose.Schema({
             type:Number,
             required:true
         },
+        companyName:{
+            type:String
+        },
+        comapnyAddress:{
+            type:String
+        },
+        companySite:{
+            type:String
+        },
+        companyWork:{
+            type:String
+        }
+        ,
     isAdmin:{
         type:Boolean,
         required:true,
