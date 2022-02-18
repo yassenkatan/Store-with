@@ -3,8 +3,7 @@ const auth=require('../controllers/auth_controller');
 const router=express.Router();
 const multer=require('multer');
 //SignUp
-    let now=Date.now();
-    let DateNow=new Date(now);
+    let DateNow=new Date(Date.now());
 let storage=multer.diskStorage({
     destination:(req,file,cb)=>{
         cb(null,'Media/Users')
@@ -24,7 +23,7 @@ router.get('/all_users',auth.Admin_auth,auth.all_users);
 
 //Update User
 router.put('/update_user_byAdmin',auth.Admin_auth,auth.upd_user_by_admin);
-router.put('/update_user_byBussiness',auth.upd_user_by_bussines);
+router.put('/update_user_byBussiness',auth.Bussiness_auth,auth.upd_user_by_bussines);
 router.put('/update_user_byCustomer',auth.Customer_auth,auth.upd_user_by_customer);
 
 module.exports=router;

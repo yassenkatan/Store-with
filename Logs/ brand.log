@@ -1,0 +1,71 @@
+2/17/2022, 9:59:16 AM | ERROR | Add Brand :  | data "BrandOfCat.forEach is not a function" | 
+2/17/2022, 9:59:37 AM | ERROR | Add Brand :  | data "Brand is Exist | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 9:59:57 AM | INFO | Add Brand :  | data "AUDI Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:00:19 AM | INFO | Add Brand :  | data "BMW Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:01:03 AM | ERROR | Add Brand :  | data "saved is not defined" | 
+2/17/2022, 10:05:43 AM | ERROR | Add Brand :  | data "Brand is Exist | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:06:55 AM | INFO | Add Brand :  | data "Mercedes Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:10:11 AM | INFO | Add Brand :  | data "OPEL Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:11:04 AM | INFO | Add Brand :  | data "PEGOUT Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:11:10 AM | INFO | Add Brand :  | data "RENAULT Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:11:39 AM | INFO | Add Brand :  | data "ASUS Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:11:44 AM | INFO | Add Brand :  | data "HP Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:11:50 AM | INFO | Add Brand :  | data "DELL Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:11:55 AM | INFO | Add Brand :  | data "LENOVO Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:12:02 AM | INFO | Add Brand :  | data "FUJITSU Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:12:07 AM | INFO | Add Brand :  | data "MSI Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:12:31 AM | INFO | Add Brand :  | data "TOSHIBA Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:12:37 AM | INFO | Add Brand :  | data "APPLE Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:12:53 AM | INFO | Add Brand :  | data "APPLE Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:13:00 AM | INFO | Add Brand :  | data "HP Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:13:04 AM | INFO | Add Brand :  | data "DELL Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:13:09 AM | INFO | Add Brand :  | data "ASUS Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:13:22 AM | INFO | Add Brand :  | data "LENOVO Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:13:32 AM | INFO | Add Brand :  | data "MSI Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:13:49 AM | INFO | Add Brand :  | data "FUJITSU Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:14:02 AM | INFO | Add Brand :  | data "QNAP Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:14:08 AM | INFO | Add Brand :  | data "SYNOLOGY Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:14:16 AM | INFO | Add Brand :  | data "WD CLOUD Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:14:28 AM | INFO | Add Brand :  | data "WESTREN DIGITAL Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:14:51 AM | INFO | Add Brand :  | data "HITACHI Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:15:05 AM | INFO | Add Brand :  | data "SEGATE Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:15:18 AM | INFO | Add Brand :  | data "TRANCENT Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:15:26 AM | INFO | Add Brand :  | data "TOSHIBA Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:16:38 AM | INFO | Add Brand :  | data "D-LINK Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:16:48 AM | INFO | Add Brand :  | data "TP-LINK Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:16:56 AM | INFO | Add Brand :  | data "MIKROTIK Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:17:02 AM | INFO | Add Brand :  | data "UNI-FI Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:17:08 AM | INFO | Add Brand :  | data "CISCO Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:17:19 AM | INFO | Add Brand :  | data "HUAWEI Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:17:33 AM | INFO | Add Brand :  | data "PLANET Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:17:49 AM | INFO | Add Brand :  | data "ASUS Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:17:52 AM | INFO | Add Brand :  | data "HPE Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:17:58 AM | INFO | Add Brand :  | data "DELL Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:18:04 AM | INFO | Add Brand :  | data "FUJITSU Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:18:34 AM | INFO | Add Brand :  | data "JBL Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:18:38 AM | INFO | Add Brand :  | data "SONY Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:18:43 AM | INFO | Add Brand :  | data "PIONEER Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:18:48 AM | INFO | Add Brand :  | data "ASUS Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:18:58 AM | INFO | Add Brand :  | data "BITS Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:19:12 AM | INFO | Add Brand :  | data "A4TECH Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:19:17 AM | INFO | Add Brand :  | data "LOGITECH Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:19:22 AM | INFO | Add Brand :  | data "ASUS Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:19:25 AM | INFO | Add Brand :  | data "DELL Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:19:29 AM | INFO | Add Brand :  | data "HP Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:19:33 AM | INFO | Add Brand :  | data "MSI Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:19:39 AM | INFO | Add Brand :  | data "LENOVO Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:19:43 AM | INFO | Add Brand :  | data "APPLE Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:19:55 AM | INFO | Add Brand :  | data "HUAWEI Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:19:59 AM | INFO | Add Brand :  | data "MI Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:20:04 AM | INFO | Add Brand :  | data "SAMSUNG Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:20:12 AM | ERROR | Add Brand :  | data "Brand is Exist | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:20:29 AM | INFO | Add Brand :  | data "SAMSUNG Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:20:35 AM | INFO | Add Brand :  | data "SONY Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:20:40 AM | INFO | Add Brand :  | data "APPLE Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:20:49 AM | INFO | Add Brand :  | data "TREVIEW Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:20:58 AM | INFO | Add Brand :  | data "LG Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:21:09 AM | INFO | Add Brand :  | data "DAHUA Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:21:16 AM | INFO | Add Brand :  | data "HIKVISION Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:21:20 AM | INFO | Add Brand :  | data "SAMSUNG Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:21:27 AM | INFO | Add Brand :  | data "UK PLUS Brand is Added | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 10:21:34 AM | INFO | Add Brand :  | data "VISION Brand is Added | IP : ::ffff:127.0.0.1" | 

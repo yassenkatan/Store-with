@@ -1,0 +1,38 @@
+2/17/2022, 9:27:42 AM | ERROR | Add Category :  | data "category validation failed: cat_name: Path `cat_name` is required." | 
+2/17/2022, 9:28:07 AM | ERROR | Add Category :  | data "category validation failed: cat_name: Path `cat_name` is required." | 
+2/17/2022, 9:28:18 AM | INFO | Add Category :  | data "Cars is New Category Added | IP: ::ffff:127.0.0.1" | 
+2/17/2022, 9:29:32 AM | ERROR | Add Category :  | data "Category is exist | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 9:31:26 AM | ERROR | Add Category :  | data "dept.forEach is not a function" | 
+2/17/2022, 9:34:17 AM | ERROR | Add Category :  | data "dept.forEach is not a function" | 
+2/17/2022, 9:40:32 AM | ERROR | Add Category :  | data "dept.forEach is not a function" | 
+2/17/2022, 9:41:20 AM | ERROR | Add Category :  | data "dept.forEach is not a function" | 
+2/17/2022, 9:42:29 AM | ERROR | Add Category :  | data "Category is exist | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 9:44:29 AM | ERROR | Add Category :  | data "Category is exist | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 9:45:54 AM | INFO | Add Category :  | data "Truck is New Category Added | IP: ::ffff:127.0.0.1" | 
+2/17/2022, 9:46:18 AM | INFO | Add Category :  | data "Motocycle is New Category Added | IP: ::ffff:127.0.0.1" | 
+2/17/2022, 9:46:23 AM | INFO | Add Category :  | data "Bus is New Category Added | IP: ::ffff:127.0.0.1" | 
+2/17/2022, 9:46:28 AM | INFO | Add Category :  | data "Boat is New Category Added | IP: ::ffff:127.0.0.1" | 
+2/17/2022, 9:47:01 AM | INFO | Add Category :  | data "Laptops is New Category Added | IP: ::ffff:127.0.0.1" | 
+2/17/2022, 9:47:31 AM | ERROR | Add Category :  | data "Category is exist | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 9:47:37 AM | INFO | Add Category :  | data "PCs is New Category Added | IP: ::ffff:127.0.0.1" | 
+2/17/2022, 9:47:47 AM | INFO | Add Category :  | data "Storage Devices is New Category Added | IP: ::ffff:127.0.0.1" | 
+2/17/2022, 9:47:56 AM | INFO | Add Category :  | data "Network Devices is New Category Added | IP: ::ffff:127.0.0.1" | 
+2/17/2022, 9:48:02 AM | INFO | Add Category :  | data "Servers is New Category Added | IP: ::ffff:127.0.0.1" | 
+2/17/2022, 9:48:41 AM | ERROR | Add Category :  | data "category validation failed: cat_name: Path `cat_name` (`Headphones & Microphones`) is longer than the maximum allowed length (20)." | 
+2/17/2022, 9:49:03 AM | INFO | Add Category :  | data "Headphones & Mics is New Category Added | IP: ::ffff:127.0.0.1" | 
+2/17/2022, 9:49:15 AM | INFO | Add Category :  | data "Accessories is New Category Added | IP: ::ffff:127.0.0.1" | 
+2/17/2022, 9:49:33 AM | INFO | Add Category :  | data "Screens is New Category Added | IP: ::ffff:127.0.0.1" | 
+2/17/2022, 9:50:01 AM | ERROR | Add Category :  | data "category validation failed: cat_name: Path `cat_name` (`Surveillance Systems `) is longer than the maximum allowed length (20)." | 
+2/17/2022, 9:50:07 AM | INFO | Add Category :  | data "Surveillance System is New Category Added | IP: ::ffff:127.0.0.1" | 
+2/17/2022, 9:50:31 AM | INFO | Add Category :  | data "Homes is New Category Added | IP: ::ffff:127.0.0.1" | 
+2/17/2022, 9:50:39 AM | INFO | Add Category :  | data "Garage is New Category Added | IP: ::ffff:127.0.0.1" | 
+2/17/2022, 9:50:50 AM | INFO | Add Category :  | data "Farms is New Category Added | IP: ::ffff:127.0.0.1" | 
+2/17/2022, 9:51:21 AM | INFO | Add Category :  | data "Pants is New Category Added | IP: ::ffff:127.0.0.1" | 
+2/17/2022, 9:51:26 AM | INFO | Add Category :  | data "Shirt is New Category Added | IP: ::ffff:127.0.0.1" | 
+2/17/2022, 9:51:34 AM | INFO | Add Category :  | data "T-Shirt is New Category Added | IP: ::ffff:127.0.0.1" | 
+2/17/2022, 9:51:41 AM | INFO | Add Category :  | data "Shoose is New Category Added | IP: ::ffff:127.0.0.1" | 
+2/17/2022, 9:51:47 AM | INFO | Add Category :  | data "Hats is New Category Added | IP: ::ffff:127.0.0.1" | 
+2/17/2022, 9:51:49 AM | ERROR | Add Category :  | data "Category is exist | IP : ::ffff:127.0.0.1" | 
+2/17/2022, 9:51:59 AM | INFO | Add Category :  | data "Caskets is New Category Added | IP: ::ffff:127.0.0.1" | 
+2/17/2022, 9:52:15 AM | INFO | Add Category :  | data "Jackets is New Category Added | IP: ::ffff:127.0.0.1" | 
+2/17/2022, 9:52:21 AM | INFO | Add Category :  | data "Dresses is New Category Added | IP: ::ffff:127.0.0.1" | 
