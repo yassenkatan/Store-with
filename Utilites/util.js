@@ -23,7 +23,20 @@ const get_token=async (req,data)=>{
         }
        return data;
 }
+const get_token_ID=async(req,data)=>{
+    const token=req.cookies.Auth_token;
+    const decoded=jwt.verify(token,process.env.TOKEN_KEY,{expiresIn:process.env.EXPIRES_IN_KEY});
+        req.user_signedIn=decoded;
+        if(req.user_signedIn=decoded)
+        {
+            let id=req.user_signedIn.id;
+            data=id;
+        }
+       return data;
+}
+
 module.exports={
     DateNow,
-    get_token
+    get_token,
+    get_token_ID
 }

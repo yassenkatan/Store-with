@@ -42,7 +42,8 @@ const all_depts=async(req,res)=>{
         if(all_dept){
             Audit_Controller.prepareAudit(auditAction.auditAction.ALL_DEPT,'Get All Departments',200,null,token_data,req.socket.remoteAddress,util.DateNow());
         logger.info('All Departments : ',`Get All Departments | IP: ${req.socket.remoteAddress}`)
-        res.status(200).send(`All Departments: \n ${all_dept}`);
+        res.status(200).send(all_dept);
+        
         }
         else{
             alert('Don`t found any Department ...')
@@ -55,7 +56,18 @@ const all_depts=async(req,res)=>{
         res.status(404).send('ERROR MSG: '+err.message);
     }
 }
-
+const all_dept_name=async ()=>{
+    try {
+         dept_name=[];
+         let all_dept=await Department.find({},{_id:0,dept_name:1});
+         for(let i=0;i<all_dept.length;i++){
+             dept_name[i]=all_dept[i].dept_name;
+         }
+         return dept_name;
+    } catch (error) {
+        res.status.send(error.message)
+    }
+}
 //Search
 const select_dept=async (req,res)=>{
     try {
@@ -131,6 +143,7 @@ const del_dept=async (req,res)=>{
 module.exports={
     add_dept,
     all_depts,
+    all_dept_name,
     select_dept,
     upd_dept,
     del_dept

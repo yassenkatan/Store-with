@@ -73,8 +73,26 @@ const ProductSchema=new schema({
         },
         key10:{
             type:String
+        },
+        key11:{
+            type:String
+        },
+        key12:{
+            type:String
+        },
+        key13:{
+            type:String
+        },
+        key14:{
+            type:String
+        },key15:{
+            type:String
         }
     },
+    other:{
+        type:String
+    }
+    ,
     warrantly:{
         type:Number
     },

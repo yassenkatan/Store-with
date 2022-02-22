@@ -141,8 +141,9 @@ const login = async(req,res)=>{
                 const token=await SignedToken(user_signedIn._id);
                 //check user priv
                 if(user_signedIn.isAdmin==true){
+                    alert('Welcome '+user_signedIn.fullname+' with Administrator Roles ..');
+                    res.cookie('Auth_token',token).status(200).render('admin_dashboard')
                     
-                    res.cookie('Auth_token',token).status(200).send('Welcome '+user_signedIn.fullname+' with Administrator Roles ..');
 
                 }
                 else if(user_signedIn.isBussines==true)

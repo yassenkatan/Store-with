@@ -12,7 +12,7 @@ const util=require('../Utilites/util');
             cb(null,'Media/Products')
         },
         filename:(req,file,cb)=>{
-            cb(null,file.fieldname+ '-' +DateNow.toLocaleString());
+            cb(null,file.fieldname+ '-' +DateNow.toDateString());
         }
     });
     let upload=multer({storage:storage});

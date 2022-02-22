@@ -7,6 +7,7 @@ const auditAction=require('../audit/auditAction');
 const Logger=require('../logger/logger_controller');
 const logger=new Logger('brand');
 const util=require('../Utilites/util');
+const brand = require('../models/brand');
 
 //Add Brand
 const add_brand=async (req,res)=>{
@@ -71,16 +72,28 @@ const all_brands=async (req,res)=>{
         let dept= await Category.find({_id:cat_id},{_id:0,cat_name:1,dept_id:1}).populate({path:'dept_id',select:'dept_name'})
         Audit_Controller.prepareAudit(auditAction.auditAction.ALL_BRANDS,'Get All Brands',200,null,token_data,req.socket.remoteAddress,util.DateNow());
             logger.info('All Brands : ',`Get All Brands | IP : ${req.socket.remoteAddress}`)
-        res.send(`All Brands:\n${brands}\n All Departments:\n${dept}`);
+        
         }
         else{
             alert('Don`t Found Any Brand ...');
             logger.error('All Brands : ',`Don't Found Any Brand | IP : ${req.socket.remoteAddress}`);
         }
-        
+        return brands;
     } catch (err) {
         logger.error('All Brands : ',err.message);
         res.status(404).send('Error MSG: '+err.message);
+    }
+}
+const all_brand_names=async(brand_name)=>{
+    try {
+        let brands=await Brand.find();
+        brand_name=[];
+        for(let i=0;i<brands.length;i++){
+            brand_name[i]=brands[i].brand_name;
+        }
+        return brand_name;
+    } catch (err) {
+        res.status(404).send(err.message)
     }
 }
 
@@ -170,6 +183,7 @@ const del_brand=async (req,res)=>{
 module.exports={
     add_brand,
     all_brands,
+    all_brand_names,
     Serach_By_name,
     upd_brand,
     del_brand

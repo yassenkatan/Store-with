@@ -157,3 +157,14 @@
 2/16/2022, 10:39:48 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
 2/17/2022, 11:28:02 AM | INFO | User SignUp:  | data "ahmad@admin.com | IP: ::ffff:127.0.0.1" | 
 2/17/2022, 11:31:00 AM | ERROR | User SignUp:  | data "ENOENT: no such file or directory, open 'Media/Users/kg'" | 
+2/18/2022, 1:19:03 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/18/2022, 1:20:17 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/18/2022, 1:21:28 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/18/2022, 1:33:47 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/18/2022, 1:34:07 PM | ERROR | Admin Auth :  | data "Access Rejected | IP: ::ffff:127.0.0.1" | 
+2/18/2022, 1:34:07 PM | ERROR | Admin Auth : jwt must be provided |
+2/18/2022, 2:01:55 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/18/2022, 2:12:33 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/18/2022, 8:29:13 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/18/2022, 8:33:04 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 
+2/18/2022, 9:27:24 PM | INFO | User Login:  | data "admin@admin.com | ::ffff:127.0.0.1" | 

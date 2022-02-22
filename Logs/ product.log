@@ -4,3 +4,9 @@
 2/16/2022, 10:27:16 PM | ERROR | Add Product :  | data "Cannot read property 'filename' of undefined" | 
 2/17/2022, 11:06:59 AM | ERROR | Add Product :  | data "Cannot read property 'cookies' of undefined" | 
 2/17/2022, 11:21:04 AM | ERROR | Add Product :  | data "Cannot read property 'filename' of undefined" | 
+2/18/2022, 1:41:09 PM | ERROR | Add Product :  | data "ENOENT: no such file or directory, open '/Media/Products/Product_image'" | 
+2/18/2022, 1:41:20 PM | ERROR | Add Product :  | data "product validation failed: user.0: Cast to [ObjectId] failed for value \"[\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMDRmMDUzMGJjMDk1MTAxNjU3ZTg5NSIsImlhdCI6MTY0NTE4NDAyNywiZXhwIjoxNjQ3Nzc2MDI3fQ.RxgHU8WcqEE3dHL94Vwwt4_Zm-NfiGoWP36JP2P3OeY\"]\" (type string) at path \"user.0\"" | 
+2/18/2022, 1:42:13 PM | ERROR | Add Product :  | data "product validation failed: user.0: Cast to [ObjectId] failed for value \"[\"admin@admin.com\"]\" (type string) at path \"user.0\"" | 
+2/18/2022, 2:03:47 PM | INFO | Add Product :  | data "K540 Product is Added | IP : ::ffff:127.0.0.1" | 
+2/18/2022, 2:07:10 PM | INFO | Add Product :  | data "ROG STARIX  Product is Added | IP : ::ffff:127.0.0.1" | 
+2/18/2022, 2:08:52 PM | INFO | Add Product :  | data "ZEPHERUS Product is Added | IP : ::ffff:127.0.0.1" | 

@@ -4,6 +4,7 @@ const alert=require('alert');
 const fs=require('fs');
 const Brand=require('../models/brand')
 const Category=require('../models/category');
+const Filter_Field=require('../models/filter_field');
 const Product=require('../models/product');
 const Ads=require('../models/Ads');
 const auditAction=require('../audit/auditAction');
@@ -16,6 +17,7 @@ const util=require('../Utilites/util');
 const add_product=async (req,res)=>{
     try {
         const token_data=await util.get_token(req);
+        const token_ID=await util.get_token_ID(req);
         let prod_name=req.body.prod_name;
         let rate=req.body.rate;
         let price=req.body.price;
@@ -34,9 +36,10 @@ const add_product=async (req,res)=>{
         let key8=req.body.key8;
         let key9=req.body.key9;
         let key10=req.body.key10;
+        let other=req.body.other;
         let warrantly=req.body.warrantly;
         let brand=req.body.brand;
-        let user=req.cookies.Auth_token;
+        let user=token_ID;
         let new_product=await new Product({
             prod_name:prod_name.toUpperCase(),
             image:{
@@ -62,6 +65,7 @@ const add_product=async (req,res)=>{
                 key9:key9.toUpperCase(),
                 key10:key10.toUpperCase(),
             },
+            other:other,
             warrantly:warrantly,
             brand:brand,
             user:user
@@ -73,11 +77,12 @@ const add_product=async (req,res)=>{
         }
         else{
 //Image Uploader 
+
     let saved=await Product.create(new_product);
     res.status(200).send(saved.prod_name+' is New Product Added ...');
     Audit_Controller.prepareAudit(auditAction.auditAction.ADD_PRODUCT,saved.prod_name,200,null,token_data,req.socket.remoteAddress,util.DateNow())
     logger.info('Add Product : ',`${saved.prod_name} Product is Added | IP : ${req.socket.remoteAddress}`)
-    return prod_name;
+
         }
     }
     catch (err) {
