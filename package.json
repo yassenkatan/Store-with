@@ -4,31 +4,34 @@
   "description": "E-Commerce Store",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon app",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yassenkatan/Store-with.git"
+    "url": "git+https://github.com/yassenkatan/Store-with-MongoDB"
   },
   "author": "Yassin Kattan - Backend Web Developer",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/yassenkatan/Store-with/issues"
+    "url": "https://github.com/yassenkatan/Store-with-MongoDB/issues"
   },
-  "homepage": "https://github.com/yassenkatan/Store-with#readme",
+  "homepage": "https://github.com/yassenkatan/Store-with-MongoDB#readme",
   "dependencies": {
+    "alert": "^5.0.10",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.1",
     "dotenv": "^16.0.0",
     "ejs": "^3.1.6",
     "encoding": "^0.1.13",
-    "express": "^4.17.2",
+    "express": "^4.17.3",
     "fs": "0.0.1-security",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.2.1",
+    "mongoose": "^6.2.4",
     "multer": "^1.4.4",
     "nodemon": "^2.0.15",
     "path": "^0.12.7",
-    "util": "^0.12.4"
+    "util": "^0.12.4",
+    "winston": "^3.6.0"
   }
 }
